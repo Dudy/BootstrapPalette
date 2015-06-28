@@ -11,17 +11,17 @@ import org.openide.DialogDisplayer;
  *
  * @author podolak
  */
-public class PageCustomizer extends javax.swing.JPanel {
+public class NavbarCustomizer extends javax.swing.JPanel {
 
     private Dialog dialog = null;
     private DialogDescriptor descriptor = null;
     private boolean dialogOK = false;
 
-    private final Page page;
+    private final Navbar navbar;
     private final JTextComponent target;
 
-    public PageCustomizer(Page page, JTextComponent target) {
-        this.page = page;
+    public NavbarCustomizer(Navbar navbar, JTextComponent target) {
+        this.navbar = navbar;
         this.target = target;
 
         initComponents();
@@ -36,12 +36,12 @@ public class PageCustomizer extends javax.swing.JPanel {
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
 
-        titleLabel = new javax.swing.JLabel();
-        title = new javax.swing.JTextField();
+        brandLabel = new javax.swing.JLabel();
+        brand = new javax.swing.JTextField();
 
-        titleLabel.setText(org.openide.util.NbBundle.getMessage(PageCustomizer.class, "PageCustomizer.titleLabel.text")); // NOI18N
+        brandLabel.setText(org.openide.util.NbBundle.getMessage(NavbarCustomizer.class, "NavbarCustomizer.brandLabel.text")); // NOI18N
 
-        title.setText(org.openide.util.NbBundle.getMessage(PageCustomizer.class, "PageCustomizer.title.text")); // NOI18N
+        brand.setText(org.openide.util.NbBundle.getMessage(NavbarCustomizer.class, "NavbarCustomizer.brand.text")); // NOI18N
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
         this.setLayout(layout);
@@ -49,9 +49,9 @@ public class PageCustomizer extends javax.swing.JPanel {
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
-                .addComponent(titleLabel)
+                .addComponent(brandLabel)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(title, javax.swing.GroupLayout.DEFAULT_SIZE, 411, Short.MAX_VALUE)
+                .addComponent(brand, javax.swing.GroupLayout.DEFAULT_SIZE, 399, Short.MAX_VALUE)
                 .addContainerGap())
         );
         layout.setVerticalGroup(
@@ -59,15 +59,15 @@ public class PageCustomizer extends javax.swing.JPanel {
             .addGroup(layout.createSequentialGroup()
                 .addContainerGap()
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(titleLabel)
-                    .addComponent(title, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addComponent(brandLabel)
+                    .addComponent(brand, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
         );
     }// </editor-fold>//GEN-END:initComponents
 
     public boolean showDialog() {
         dialogOK = false;
-        descriptor = new DialogDescriptor(this, org.openide.util.NbBundle.getMessage(PageCustomizer.class, "PageCustomizer.DialogDescriptor.title"),
+        descriptor = new DialogDescriptor(this, org.openide.util.NbBundle.getMessage(NavbarCustomizer.class, "NavbarCustomizer.DialogDescriptor.title"),
                 true, DialogDescriptor.OK_CANCEL_OPTION, DialogDescriptor.OK_OPTION,
                 new ActionListener() {
                     @Override
@@ -85,11 +85,11 @@ public class PageCustomizer extends javax.swing.JPanel {
     }
 
     private void evaluateInput() {
-        page.setTitle(title.getText());
+        navbar.setBrand(brand.getText());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JTextField title;
-    private javax.swing.JLabel titleLabel;
+    private javax.swing.JTextField brand;
+    private javax.swing.JLabel brandLabel;
     // End of variables declaration//GEN-END:variables
 }

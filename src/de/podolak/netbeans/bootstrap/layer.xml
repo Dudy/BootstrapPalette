@@ -3,8 +3,11 @@
 <filesystem>
     <folder name="HTMLPalette">
         <folder name="Bootstrap">
+            <file name="Navbar.xml" url="resources/Navbar.xml">
+                <attr name="position" intvalue="100"/>
+            </file>
             <file name="Page.xml" url="resources/Page.xml">
-                <attr name="position" intvalue="150"/>
+                <attr name="position" intvalue="200"/>
             </file>
         </folder>
     </folder>
