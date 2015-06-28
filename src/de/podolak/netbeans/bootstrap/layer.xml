@@ -9,6 +9,9 @@
             <file name="Page.xml" url="resources/Page.xml">
                 <attr name="position" intvalue="200"/>
             </file>
+            <file name="Panel.xml" url="resources/Panel.xml">
+                <attr name="position" intvalue="300"/>
+            </file>
         </folder>
     </folder>
 </filesystem>
