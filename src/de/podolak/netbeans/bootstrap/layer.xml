@@ -6,6 +6,9 @@
             <file name="Button.xml" url="resources/Button.xml">
                 <attr name="position" intvalue="100"/>
             </file>
+            <file name="Carousel.xml" url="resources/Carousel.xml">
+                <attr name="position" intvalue="100"/>
+            </file>
             <file name="Grid.xml" url="resources/Grid.xml">
                 <attr name="position" intvalue="100"/>
             </file>
