@@ -3,14 +3,17 @@
 <filesystem>
     <folder name="HTMLPalette">
         <folder name="Bootstrap">
+            <file name="Grid.xml" url="resources/Grid.xml">
+                <attr name="position" intvalue="100"/>
+            </file>
             <file name="Navbar.xml" url="resources/Navbar.xml">
                 <attr name="position" intvalue="100"/>
             </file>
             <file name="Page.xml" url="resources/Page.xml">
-                <attr name="position" intvalue="200"/>
+                <attr name="position" intvalue="100"/>
             </file>
             <file name="Panel.xml" url="resources/Panel.xml">
-                <attr name="position" intvalue="300"/>
+                <attr name="position" intvalue="100"/>
             </file>
         </folder>
     </folder>

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE editor_palette_item PUBLIC "-//NetBeans//Editor Palette Item 1.1//EN"
+  "https://netbeans.org/dtds/editor-palette-item-1_1.dtd">
+
+<editor_palette_item version="1.0">
+
+    <class name="de.podolak.netbeans.bootstrap.Grid" />
+    
+    <icon16 urlvalue="de/podolak/netbeans/bootstrap/resources/grid16.jpg" />
+    <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/grid32.jpg" />
+   
+    <inline-description>
+       <display-name>New Grid</display-name>
+       <tooltip> <![CDATA[ <container><row><col>  ]]></tooltip> 
+    </inline-description>
+               
+</editor_palette_item>
