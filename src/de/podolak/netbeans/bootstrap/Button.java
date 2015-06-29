@@ -10,39 +10,24 @@ import org.openide.text.ActiveEditorDrop;
  */
 public class Button implements ActiveEditorDrop {
     
+    private String text;
     private ButtonType buttonType = null;
+    private ButtonSize buttonSize = null;
 
     public Button() {
     }
     
     private String createBody() {
-        StringBuilder stringBuilder = new StringBuilder();
-        int columnSize = 12 / getColumns();
-        
-        stringBuilder.append("<div class=\"container\">\n");
-        
-        for (int i = 0; i < getRows(); i++) {
-            stringBuilder.append("    <div class=\"row\">\n");
-            
-            for (int j = 0; j < getColumns(); j++) {
-                stringBuilder
-                        .append("        <div class=\"")
-                        .append(getGridBreakpoint().getPrefix())
-                        .append(columnSize)
-                        .append("\">\n")
-                        .append("        </div>\n");
-            }
-            
-            stringBuilder.append("    </div>\n");
-        }
-        stringBuilder.append("</div>\n");
-        
-        return stringBuilder.toString();
+        return "<button type=\"button\" class=\"btn "
+                + getButtonSize().getCssClass() + (getButtonSize().getCssClass().length() > 0 ? " " : "")
+                + getButtonType().getCssClass() + "\">"
+                + getText()
+                + "</button>";
     }
     
     @Override
     public boolean handleTransfer(JTextComponent targetComponent) {
-        GridCustomizer c = new GridCustomizer(this, targetComponent);
+        ButtonCustomizer c = new ButtonCustomizer(this, targetComponent);
         boolean accept = c.showDialog();
         if (accept) {
         
@@ -58,45 +43,45 @@ public class Button implements ActiveEditorDrop {
     }
 
     /**
-     * @return the rows
+     * @return the text
      */
-    public int getRows() {
-        return rows;
+    public String getText() {
+        return text;
     }
 
     /**
-     * @param rows the rows to set
+     * @param text the text to set
      */
-    public void setRows(int rows) {
-        this.rows = rows;
+    public void setText(String text) {
+        this.text = text;
     }
 
     /**
-     * @return the columns
+     * @return the buttonType
      */
-    public int getColumns() {
-        return columns;
+    public ButtonType getButtonType() {
+        return buttonType;
     }
 
     /**
-     * @param columns the columns to set
+     * @param buttonType the buttonType to set
      */
-    public void setColumns(int columns) {
-        this.columns = columns;
+    public void setButtonType(ButtonType buttonType) {
+        this.buttonType = buttonType;
     }
 
     /**
-     * @return the gridBreakpoint
+     * @return the buttonSize
      */
-    public GridBreakpoint getGridBreakpoint() {
-        return gridBreakpoint;
+    public ButtonSize getButtonSize() {
+        return buttonSize;
     }
 
     /**
-     * @param gridBreakpoint the gridBreakpoint to set
+     * @param buttonSize the buttonSize to set
      */
-    public void setGridBreakpoint(GridBreakpoint gridBreakpoint) {
-        this.gridBreakpoint = gridBreakpoint;
+    public void setButtonSize(ButtonSize buttonSize) {
+        this.buttonSize = buttonSize;
     }
-    
+
 }

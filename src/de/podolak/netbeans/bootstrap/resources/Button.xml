@@ -6,12 +6,12 @@
 
     <class name="de.podolak.netbeans.bootstrap.Button" />
     
-    <icon16 urlvalue="de/podolak/netbeans/bootstrap/resources/button16.jpg" />
-    <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/button32.jpg" />
+    <icon16 urlvalue="de/podolak/netbeans/bootstrap/resources/button16.png" />
+    <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/button32.png" />
    
     <inline-description>
-       <display-name>New Grid</display-name>
-       <tooltip> <![CDATA[ <container><row><col>  ]]></tooltip> 
+       <display-name>New Button</display-name>
+       <tooltip> <![CDATA[ <button>  ]]></tooltip>
     </inline-description>
                
 </editor_palette_item>
