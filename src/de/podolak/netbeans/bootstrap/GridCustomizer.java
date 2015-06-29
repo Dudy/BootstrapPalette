@@ -25,9 +25,9 @@ public class GridCustomizer extends javax.swing.JPanel {
         this.target = target;
 
         initComponents();
-        columns.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoints.COLUMNS_PER_ROW));
-        //columnSize.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoints.PREFIXES));
-        columnSize.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoints.values()));
+        columns.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoint.COLUMNS_PER_ROW));
+        //columnSize.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoint.PREFIXES));
+        columnSize.setModel(new javax.swing.DefaultComboBoxModel(GridBreakpoint.values()));
     }
 
     /**
@@ -112,7 +112,7 @@ public class GridCustomizer extends javax.swing.JPanel {
     private void evaluateInput() {
         grid.setRows(Integer.parseInt(rows.getText()));
         grid.setColumns((Integer) columns.getSelectedItem());
-        grid.setGridBreakpoint((GridBreakpoints) columnSize.getSelectedItem());
+        grid.setGridBreakpoint((GridBreakpoint) columnSize.getSelectedItem());
     }
 
     // Variables declaration - do not modify//GEN-BEGIN:variables

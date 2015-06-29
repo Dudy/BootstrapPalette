@@ -4,7 +4,7 @@ package de.podolak.netbeans.bootstrap;
  *
  * @author podolak
  */
-public enum GridBreakpoints {
+public enum GridBreakpoint {
 
     EXTRA_SMALL(   0, "col-xs-"),
     SMALL      ( 768, "col-sm-"),
@@ -22,7 +22,7 @@ public enum GridBreakpoints {
     private final int pixel;
     private final String prefix;
     
-    private GridBreakpoints(int pixel, String prefix) {
+    private GridBreakpoint(int pixel, String prefix) {
         this.pixel = pixel;
         this.prefix = prefix;
     }

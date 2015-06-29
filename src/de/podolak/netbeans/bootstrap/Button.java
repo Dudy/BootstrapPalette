@@ -8,13 +8,11 @@ import org.openide.text.ActiveEditorDrop;
  *
  * @author podolak
  */
-public class Grid implements ActiveEditorDrop {
+public class Button implements ActiveEditorDrop {
     
-    private int rows = 0;
-    private int columns = 0;
-    private GridBreakpoint gridBreakpoint = null;
+    private ButtonType buttonType = null;
 
-    public Grid() {
+    public Button() {
     }
     
     private String createBody() {
