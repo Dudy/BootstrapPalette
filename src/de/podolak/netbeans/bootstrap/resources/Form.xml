@@ -10,7 +10,7 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/form32.png" />
    
     <inline-description>
-       <display-name>New Form</display-name>
+       <display-name>Form</display-name>
        <tooltip> <![CDATA[ <form>  ]]></tooltip>
     </inline-description>
                

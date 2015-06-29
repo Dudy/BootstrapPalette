@@ -10,7 +10,7 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/navbar32.png" />
    
     <inline-description>
-       <display-name>New Navbar</display-name>
+       <display-name>Navbar</display-name>
        <tooltip> <![CDATA[ <nav>  ]]></tooltip> 
     </inline-description>
                

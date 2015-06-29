@@ -10,8 +10,8 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/panel32.png" />
    
     <inline-description>
-       <display-name>New Panel</display-name>
-       <tooltip> <![CDATA[ div.panel  ]]></tooltip> 
+       <display-name>Panel</display-name>
+       <tooltip> <![CDATA[ <div.panel>  ]]></tooltip> 
     </inline-description>
                
 </editor_palette_item>

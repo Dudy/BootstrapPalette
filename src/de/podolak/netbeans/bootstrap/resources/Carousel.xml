@@ -10,7 +10,7 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/carousel32.png" />
    
     <inline-description>
-       <display-name>New Carousel</display-name>
+       <display-name>Carousel</display-name>
        <tooltip> <![CDATA[ <div.carousel>  ]]></tooltip>
     </inline-description>
                

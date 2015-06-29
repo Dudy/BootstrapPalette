@@ -6,11 +6,11 @@
 
     <class name="de.podolak.netbeans.bootstrap.Grid" />
     
-    <icon16 urlvalue="de/podolak/netbeans/bootstrap/resources/grid16.jpg" />
-    <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/grid32.jpg" />
+    <icon16 urlvalue="de/podolak/netbeans/bootstrap/resources/grid16.png" />
+    <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/grid32.png" />
    
     <inline-description>
-       <display-name>New Grid</display-name>
+       <display-name>Grid</display-name>
        <tooltip> <![CDATA[ <container><row><col>  ]]></tooltip> 
     </inline-description>
                

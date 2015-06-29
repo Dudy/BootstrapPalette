@@ -10,7 +10,7 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/page32.png" />
    
     <inline-description>
-       <display-name>New Page</display-name>
+       <display-name>Page</display-name>
        <tooltip> <![CDATA[ <html>  ]]></tooltip> 
     </inline-description>
                

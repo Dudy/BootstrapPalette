@@ -10,7 +10,7 @@
     <icon32 urlvalue="de/podolak/netbeans/bootstrap/resources/button32.png" />
    
     <inline-description>
-       <display-name>New Button</display-name>
+       <display-name>Button</display-name>
        <tooltip> <![CDATA[ <button>  ]]></tooltip>
     </inline-description>
                
