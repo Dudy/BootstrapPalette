@@ -11,17 +11,17 @@ import org.openide.DialogDisplayer;
  *
  * @author podolak
  */
-public class CarouselCustomizer extends javax.swing.JPanel {
+public class FormCustomizer extends javax.swing.JPanel {
 
     private Dialog dialog = null;
     private DialogDescriptor descriptor = null;
     private boolean dialogOK = false;
 
-    private final Carousel carousel;
+    private final Form form;
     private final JTextComponent target;
 
-    public CarouselCustomizer(Carousel carousel, JTextComponent target) {
-        this.carousel = carousel;
+    public FormCustomizer(Form form, JTextComponent target) {
+        this.form = form;
         this.target = target;
 
         initComponents();
@@ -50,7 +50,7 @@ public class CarouselCustomizer extends javax.swing.JPanel {
 
     public boolean showDialog() {
         dialogOK = false;
-        descriptor = new DialogDescriptor(this, org.openide.util.NbBundle.getMessage(CarouselCustomizer.class, "NavbarCustomizer.DialogDescriptor.title"),
+        descriptor = new DialogDescriptor(this, org.openide.util.NbBundle.getMessage(FormCustomizer.class, "FormCustomizer.DialogDescriptor.title"),
                 true, DialogDescriptor.OK_CANCEL_OPTION, DialogDescriptor.OK_OPTION,
                 new ActionListener() {
                     @Override
